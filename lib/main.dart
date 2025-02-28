@@ -1,3 +1,4 @@
+import 'package:expenz1/onbord_screen/onbord_scrren.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -14,9 +15,7 @@ class Myapp extends StatelessWidget {
 
       //theme: ThemeData(fontFamily: "Inter"),
       title: "expenz",
-      home: Scaffold(
-        body: Center(child: Text("Hello flutter", style: TextStyle())),
-      ),
+      home: OnbordScrren(),
     );
   }
 }
