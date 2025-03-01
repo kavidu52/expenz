@@ -108,6 +108,7 @@ class _OnbordScrrenState extends State<OnbordScrren> {
                                     child:
                                         !end_page
                                             ? BottemButton(
+                                              width: 0.33,
                                               button_name:
                                                   now_page
                                                       ? "Get Started"
@@ -132,14 +133,21 @@ class _OnbordScrrenState extends State<OnbordScrren> {
                                                     ),
                                                   );
                                                 },
-                                                child: BottemButton(
-                                                  button_name:
-                                                      now_page
-                                                          ? "Get Started"
-                                                          : "Next",
-                                                  butto_collor: Color(
-                                                    0xff7F3DFF,
-                                                  ).withOpacity(0.8),
+                                                child: Padding(
+                                                  padding:
+                                                      const EdgeInsets.only(
+                                                        left: 0,
+                                                      ),
+                                                  child: BottemButton(
+                                                    width: 0.55,
+                                                    button_name:
+                                                        now_page
+                                                            ? "Get Started"
+                                                            : "Next",
+                                                    butto_collor: Color(
+                                                      0xff7F3DFF,
+                                                    ).withOpacity(0.8),
+                                                  ),
                                                 ),
                                               ),
                                             ),
@@ -154,10 +162,9 @@ class _OnbordScrrenState extends State<OnbordScrren> {
                                     );
                                   },
                                   child: Padding(
-                                    padding: const EdgeInsets.symmetric(
-                                      horizontal: 50,
-                                    ),
+                                    padding: const EdgeInsets.only(left: 60),
                                     child: BottemButton(
+                                      width: 0.55,
                                       button_name: "Next",
                                       butto_collor: Color(
                                         0xff7F3DFF,
@@ -180,6 +187,7 @@ class _OnbordScrrenState extends State<OnbordScrren> {
                                       end_page
                                           ? Text("")
                                           : BottemButton(
+                                            width: 0.34,
                                             button_name: "preivew",
                                             butto_collor: Color(
                                               0xff7F3DFF,
